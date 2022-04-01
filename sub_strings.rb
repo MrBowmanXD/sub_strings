@@ -8,7 +8,7 @@ def sub_strings(compare, strings)
       words_array.push(string.split)
       words_array.each do | element|
         if element.include?(string)
-          words_hash[string] = 1 
+          words_hash[string] = 1
         end
       end
     else
@@ -21,5 +21,5 @@ def sub_strings(compare, strings)
 end
 
 dictionary = ["below","down","go","going","horn","how","howdy","it","i","low","own","part","partner","sit"]
-p sub_strings("below", dictionary)
+p sub_strings("below", dictionary) #provides the right output
 p sub_strings("Howdy partner, sit down! How's it going?", dictionary)
